@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <style>
+        body{
+            width: 80%;
+            height: 80vh;
+            margin: auto;;
+            background-color: rgb(223, 191, 122);
+        }
+        h1{ margin-top: 100px;
+            margin-right: 75px;
+            font-size: 50px;
+            text-align: center;
+            padding: 30px;
+            text-transform: capitalize;
+        }
+        .main{
+            width: 500px;
+            height: 400px;
+            margin: 0px auto;
+            margin-top: 50px;
+        }
+        label{
+            font-size: 23px;
+            font-weight: lighter;
+            text-transform: capitalize;
+        }
+        input{
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1> Currency Converter</h1>
+   
+    <div class="main">
+        <label>Enter Amount in ( $ ) : </label>  <input type="number" value="" id="doller"><br><br>
+        <label>Convert into (INR)  &nbsp;  &nbsp;  : </label>  <input type="number" value="" id="rupees">   
+    </div>
+<script>
+    var doller = document.getElementById('doller');
+    var rupees = document.getElementById('rupees');
+
+    //  -------------------doller funtion-------------------------
+
+     doller.addEventListener('input', function(){
+        var dlr = this.value;
+        var rps = dlr*70;
+        rupees.value = rps;
+
+     });
+
+
+
+</script>    
+
+
+</body>
+</html>
